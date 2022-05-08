@@ -416,16 +416,48 @@ height: auto;
 
 /*-------------PORTFOLIO--------*/
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.visually-hidden {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
+
+.services-button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.services-button:last-child {
+    margin: 0;
+}
+
 .services-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    display: flex;
-    align-items: center;
+    letter-spacing: 0.03em;
     color: var(--button-services-color);
     cursor: pointer;
     background-color: var(--button-background-color);
+
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-width: 73px;
+
+    margin-right: 8px;
 }
 
 .services-button:hover,
@@ -436,7 +468,22 @@ height: auto;
 
 /*-------------portfolio services------*/
 
-.sevices-title {
+.services-pics-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.services-pics-list > .services-item {
+    flex-basis: calc(100 / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.services-title {
     letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 18px;
@@ -449,4 +496,5 @@ height: auto;
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color);
+    margin-top: 4px;
 }
