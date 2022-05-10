@@ -8,20 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul,
-ol {
-    padding-left: 0;
-    margin: 0;
-}
 
 :root {
     --title-text-color: #212121;
@@ -93,7 +79,7 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
-.container-nav {
+.container {
     display: flex;
     align-items: center;
     width: 1200px;
@@ -171,8 +157,6 @@ img {
 }
 
 .header-contact-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-right: 50px;
 }
 
@@ -181,6 +165,7 @@ img {
 }
 
 .header-mail {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -195,6 +180,7 @@ img {
 }
 
 .header-tel {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -221,7 +207,7 @@ img {
     background-color: var(--hero-background-color);
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -254,18 +240,19 @@ img {
 
 /*-------------main body specificities line--------*/
 
-.container-specificities {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
-.section-specificities {
+.section {
     padding-top: 94px;
     padding-bottom: 94px
     ;
 }
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -292,17 +279,28 @@ img {
     max-width: 270px;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 .features-text {
     line-height: 1.7;
 }
 
 /* --------------main body works line------*/
 
-.container-works {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+.section {
+    padding-top: 0;
 }
 
 .section-works {
@@ -311,7 +309,6 @@ img {
 
 .works-list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .works-item {
@@ -333,7 +330,7 @@ img {
 
 /* --------------main body team line------*/
 
-.container-team {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -342,18 +339,17 @@ img {
 
 .section-team {
     background-color: var(--team-background-color);
-    padding-bottom: 94px;
 }
 
 .team-list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .team-card {
     margin-right: var(--list-right-margin);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: #F5F4FA;
 }
 
 .team-card:last-child {
@@ -396,7 +392,7 @@ img {
 
 /*-------------footer----------*/
 
-.container-footer {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -417,11 +413,11 @@ img {
     margin-bottom: 20px;
 }
 
-.adress-item {
+.contacts {
     margin-bottom: 9px;
 }
 
-.adress-item:last-child {
+.contacts:last-child {
     margin-bottom: 0;
 }
 
@@ -470,12 +466,12 @@ img {
 
 /*-------------PORTFOLIO--------*/
 
-.portfolio {
-    padding-top: 97px;
-    padding-bottom: 104px;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.container-nav {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -521,29 +517,6 @@ img {
 
 /*-------------portfolio services------*/
 
-.container-portfolio {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.services-title {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--title-text-color);
-}
-
-.services-text {
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--secondary-text-color);
-}
-
 .services-pics-list {
     display: flex;
     flex-wrap: wrap;
@@ -572,4 +545,20 @@ img {
     border-right: 1px solid #EEEEEE;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+
+.services-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.services-text {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-text-color);
 }
