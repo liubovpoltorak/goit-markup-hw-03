@@ -44,6 +44,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -72,6 +74,29 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*-----------------header body-------*/
@@ -196,13 +221,6 @@ img {
 
 /*-------------main body hero line--------*/
 
-.container-hero {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
 .section-hero {
     background-color: var(--hero-background-color);
     text-align: center;
@@ -240,19 +258,6 @@ img {
 
 /*-------------main body specificities line--------*/
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px
-    ;
-}
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -279,36 +284,19 @@ img {
     max-width: 270px;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-
 .features-text {
     line-height: 1.7;
 }
 
 /* --------------main body works line------*/
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
 .section {
-    padding-top: 0;
-}
-
-.section-works {
-    padding-bottom: 94px;
+    padding-top: 0px;
 }
 
 .works-list {
     display: flex;
+    list-style: none;
 }
 
 .works-item {
@@ -325,17 +313,11 @@ p {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 /* --------------main body team line------*/
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
 
 .section-team {
     background-color: var(--team-background-color);
@@ -391,13 +373,6 @@ p {
 }
 
 /*-------------footer----------*/
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
 
 .footer {
     background-color: var(--footer-background-color);
@@ -470,14 +445,6 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    }
 
 .services-button {
     border: none;
