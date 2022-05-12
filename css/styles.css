@@ -102,6 +102,10 @@ p {
     border-bottom: 1px solid #ECECEC;
 }
 
+.container-nav {
+    display: flex;
+}
+
 .navigation {
     display: flex;
 }
@@ -171,6 +175,8 @@ p {
 }
 
 .header-contact-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
     margin-right: 50px;
 }
 
@@ -179,12 +185,12 @@ p {
 }
 
 .header-mail {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--secondary-text-color);
 }
 
@@ -194,12 +200,12 @@ p {
 }
 
 .header-tel {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--secondary-text-color);
 }
 
