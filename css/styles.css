@@ -223,6 +223,13 @@ p {
     padding-bottom: 200px;
 }
 
+.container-hero {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .hero-title {
     max-width: 696px;
     margin: 0 auto;
@@ -284,6 +291,10 @@ p {
 }
 
 /* --------------main body works line------*/
+
+.section-works {
+    padding-top: 0;
+}
 
 .works-list {
     display: flex;
@@ -474,15 +485,8 @@ p {
     margin: 0;
     }
 
-.container-porfolio {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
 
 .services-title {
-    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
@@ -508,10 +512,6 @@ p {
 .services-item {
     margin-right: 30px;
     margin-bottom: 30px;
-}
-
-.services-item:nth-child(3n + 3) {
-    margin-right: 0;
 }
 
 .services-item:nth-last-child(-n + 3) {
